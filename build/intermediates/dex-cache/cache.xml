@@ -2,32 +2,32 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Jialue\Documents\GitHub\Macchiato\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\classes.jar"
+        jar="D:\jialue\GitHub\Macchiato\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="d84409890828e07d344a3b9b1da545dba9897b51">
-        <dex dex="C:\Users\Jialue\Documents\GitHub\Macchiato\app\build\intermediates\pre-dexed\debug\classes-216ce0f9c6bb606b5d00f1113c0d60b729c8c3ba.jar" />
+        <dex dex="D:\jialue\GitHub\Macchiato\app\build\intermediates\pre-dexed\debug\classes-ab5969c4d25fb746035278cd338114ca61045e96.jar" />
     </item>
     <item
-        jar="C:\Users\Jialue\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jar="D:\Android_Studio\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
-        <dex dex="C:\Users\Jialue\Documents\GitHub\Macchiato\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-d01cee5ddae818a46e44bb5cd1aa75e607dc2c2d.jar" />
+        <dex dex="D:\jialue\GitHub\Macchiato\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-ae3a8e0ba19c1f5ea3a15a7d373422722ac33b28.jar" />
     </item>
     <item
-        jar="C:\Users\Jialue\Documents\GitHub\Macchiato\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
-        <dex dex="C:\Users\Jialue\Documents\GitHub\Macchiato\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-b522cb64410e37043d070822340f41ce2daa29d1.jar" />
-    </item>
-    <item
-        jar="C:\Users\Jialue\Documents\GitHub\Macchiato\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jar="D:\jialue\GitHub\Macchiato\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
-        <dex dex="C:\Users\Jialue\Documents\GitHub\Macchiato\app\build\intermediates\pre-dexed\debug\classes-9b0c43c65f8d392a02627a81d667a10d944d3384.jar" />
+        <dex dex="D:\jialue\GitHub\Macchiato\app\build\intermediates\pre-dexed\debug\classes-0c8895c5a8da6fdb8196330631298db1edcf3adb.jar" />
+    </item>
+    <item
+        jar="D:\jialue\GitHub\Macchiato\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="D:\jialue\GitHub\Macchiato\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-78391494deb2cd9ef3ffe654cdd67db732ad22e3.jar" />
     </item>
 
 </items>

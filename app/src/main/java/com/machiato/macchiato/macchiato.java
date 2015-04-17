@@ -1,12 +1,12 @@
 package com.machiato.macchiato;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class macchiato extends ActionBarActivity {
+public class macchiato extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
