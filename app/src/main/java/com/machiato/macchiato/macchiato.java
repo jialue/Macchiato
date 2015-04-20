@@ -2,8 +2,10 @@ package com.machiato.macchiato;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 
 public class macchiato extends Activity {
@@ -11,7 +13,16 @@ public class macchiato extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_macchiato);
+        setContentView(R.layout.login_macchiato);
+
+        // Login button
+        final Button loginButton = (Button) findViewById(R.id.loginButton);
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Switch to new view
+                setContentView(R.layout.main_macchiato);
+            }
+        });
     }
 
 
