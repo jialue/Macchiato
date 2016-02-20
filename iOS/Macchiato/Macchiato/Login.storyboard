@@ -30,7 +30,7 @@
                                         <state key="normal" title="Login"/>
                                         <connections>
                                             <action selector="loginButton:" destination="Goo-7B-Cau" eventType="touchUpInside" id="vLo-4v-kvQ"/>
-                                            <segue destination="ng2-Ip-TDW" kind="show" id="NYq-96-qvU"/>
+                                            <segue destination="ng2-Ip-TDW" kind="show" identifier="segueToMain" id="NYq-96-qvU"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nd5-v8-jCu">
@@ -96,8 +96,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="passWord" destination="J2c-vh-Vnj" id="8qb-2b-XUd"/>
-                        <outlet property="userName" destination="6XI-GJ-V5f" id="oLX-2s-MkZ"/>
+                        <outlet property="password" destination="J2c-vh-Vnj" id="dkx-Sx-t8O"/>
+                        <outlet property="username" destination="6XI-GJ-V5f" id="ix2-5Y-4Ii"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5K8-Jx-zEt" userLabel="First Responder" sceneMemberID="firstResponder"/>

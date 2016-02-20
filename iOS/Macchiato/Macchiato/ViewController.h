@@ -10,9 +10,11 @@
 
 @interface ViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UITextField *userName;
-@property (weak, nonatomic) IBOutlet UITextField *passWord;
+@property (weak, nonatomic) IBOutlet UITextField *username;
+@property (weak, nonatomic) IBOutlet UITextField *password;
+@property BOOL isIdentityVerified;
 - (IBAction)loginButton:(id)sender;
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender;
 
 @end
 

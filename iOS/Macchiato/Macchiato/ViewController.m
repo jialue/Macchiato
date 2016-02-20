@@ -15,6 +15,7 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    self.isIdentityVerified = false;
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -25,12 +26,36 @@
 }
 
 - (IBAction)loginButton:(id)sender {
-    if (!strcmp(self.userName.text.UTF8String, "test") && !strcmp(self.passWord.text.UTF8String, "jialuehuang")) {
-        
-    }
-    else {
-//        [self show]
-    }
+    NSURL *url = [NSURL URLWithString:@"http://localhost/~air/test.php?user=0&format=json"];
+    NSURLSession *session = [NSURLSession sharedSession];
+    [[session dataTaskWithURL:url
+            completionHandler:^(NSData *data,
+                                NSURLResponse *response,
+                                NSError *error) {
+                // handle response
+                if (data.length > 0 && error == nil)
+                {
+                    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data
+                                                                         options:0
+                                                                           error:NULL];
+                    NSDictionary* userInfo = [[json objectForKey:@"posts"] objectAtIndex:0];
+                    if ([[userInfo objectForKey:@"username"] isEqualToString:self.username.text] && [[userInfo objectForKey:@"password"] isEqualToString:self.password.text]) {
+                        printf("verified!\n");
+                        self.isIdentityVerified = true;
+//                        [self performSegueWithIdentifier:@"segueToMain" sender:self];
+                    }
+                }
+            }] resume];
 }
+
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+    if ([identifier isEqualToString:@"segueToMain"]) {
+        if (!self.isIdentityVerified) {
+            return NO;
+        }
+    }
+    return YES;
+}
+
 @end
 
