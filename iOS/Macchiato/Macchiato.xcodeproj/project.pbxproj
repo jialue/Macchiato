@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		45BDCB0A1C55DB4200A2FE8A /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 45BDCB091C55DB4200A2FE8A /* main.mm */; };
 		45BDCB0D1C55DB4200A2FE8A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BDCB0C1C55DB4200A2FE8A /* AppDelegate.m */; };
-		45BDCB101C55DB4200A2FE8A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BDCB0F1C55DB4200A2FE8A /* ViewController.m */; };
 		45BDCB131C55DB4200A2FE8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45BDCB111C55DB4200A2FE8A /* Main.storyboard */; };
 		45BDCB181C55DB4200A2FE8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45BDCB161C55DB4200A2FE8A /* LaunchScreen.storyboard */; };
 		45BDCB231C55DB4200A2FE8A /* MacchiatoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BDCB221C55DB4200A2FE8A /* MacchiatoTests.m */; };
 		45BDCB2E1C55DB4200A2FE8A /* MacchiatoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BDCB2D1C55DB4200A2FE8A /* MacchiatoUITests.m */; };
+		45C0D6DF1C7930760074A55C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C0D6DE1C7930760074A55C /* LoginViewController.m */; };
 		45E728DF1C5D1A1C00EE5F44 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E728DE1C5D1A1C00EE5F44 /* Login.storyboard */; };
 		45E728E91C5EBB8600EE5F44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E728E81C5EBB8600EE5F44 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -40,8 +40,6 @@
 		45BDCB091C55DB4200A2FE8A /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		45BDCB0B1C55DB4200A2FE8A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		45BDCB0C1C55DB4200A2FE8A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		45BDCB0E1C55DB4200A2FE8A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		45BDCB0F1C55DB4200A2FE8A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		45BDCB121C55DB4200A2FE8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		45BDCB171C55DB4200A2FE8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45BDCB191C55DB4200A2FE8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +50,8 @@
 		45BDCB2D1C55DB4200A2FE8A /* MacchiatoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacchiatoUITests.m; sourceTree = "<group>"; };
 		45BDCB2F1C55DB4200A2FE8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45C0D6DC1C6FCD960074A55C /* URLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLConnection.h; sourceTree = "<group>"; };
+		45C0D6DE1C7930760074A55C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../LoginViewController.m; sourceTree = "<group>"; };
+		45C0D6E01C7930880074A55C /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		45E728DE1C5D1A1C00EE5F44 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		45E728E81C5EBB8600EE5F44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,14 +107,14 @@
 				45E728E81C5EBB8600EE5F44 /* Assets.xcassets */,
 				45BDCB0B1C55DB4200A2FE8A /* AppDelegate.h */,
 				45BDCB0C1C55DB4200A2FE8A /* AppDelegate.m */,
-				45BDCB0E1C55DB4200A2FE8A /* ViewController.h */,
-				45BDCB0F1C55DB4200A2FE8A /* ViewController.m */,
+				45C0D6DE1C7930760074A55C /* LoginViewController.m */,
 				45BDCB111C55DB4200A2FE8A /* Main.storyboard */,
 				45BDCB161C55DB4200A2FE8A /* LaunchScreen.storyboard */,
 				45E728DE1C5D1A1C00EE5F44 /* Login.storyboard */,
 				45BDCB191C55DB4200A2FE8A /* Info.plist */,
 				45BDCB081C55DB4200A2FE8A /* Supporting Files */,
 				45C0D6DC1C6FCD960074A55C /* URLConnection.h */,
+				45C0D6E01C7930880074A55C /* LoginViewController.h */,
 			);
 			path = Macchiato;
 			sourceTree = "<group>";
@@ -277,7 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45BDCB101C55DB4200A2FE8A /* ViewController.m in Sources */,
+				45C0D6DF1C7930760074A55C /* LoginViewController.m in Sources */,
 				45BDCB0D1C55DB4200A2FE8A /* AppDelegate.m in Sources */,
 				45BDCB0A1C55DB4200A2FE8A /* main.mm in Sources */,
 			);
