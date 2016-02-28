@@ -52,6 +52,7 @@
 		45C0D6DC1C6FCD960074A55C /* URLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLConnection.h; sourceTree = "<group>"; };
 		45C0D6DE1C7930760074A55C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../LoginViewController.m; sourceTree = "<group>"; };
 		45C0D6E01C7930880074A55C /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		45C0D6E11C83740D0074A55C /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		45E728DE1C5D1A1C00EE5F44 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		45E728E81C5EBB8600EE5F44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +116,7 @@
 				45BDCB081C55DB4200A2FE8A /* Supporting Files */,
 				45C0D6DC1C6FCD960074A55C /* URLConnection.h */,
 				45C0D6E01C7930880074A55C /* LoginViewController.h */,
+				45C0D6E11C83740D0074A55C /* MainViewController.h */,
 			);
 			path = Macchiato;
 			sourceTree = "<group>";

@@ -30,7 +30,6 @@
                                         <state key="normal" title="Login"/>
                                         <connections>
                                             <action selector="loginButton:" destination="Goo-7B-Cau" eventType="touchUpInside" id="vLo-4v-kvQ"/>
-                                            <segue destination="ng2-Ip-TDW" kind="show" identifier="segueToMain" id="NYq-96-qvU"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nd5-v8-jCu">
@@ -98,6 +97,7 @@
                     <connections>
                         <outlet property="password" destination="J2c-vh-Vnj" id="dkx-Sx-t8O"/>
                         <outlet property="username" destination="6XI-GJ-V5f" id="ix2-5Y-4Ii"/>
+                        <segue destination="ng2-Ip-TDW" kind="show" identifier="segueLoginToMain" id="ktA-8l-oQu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5K8-Jx-zEt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -107,15 +107,15 @@
         <!--Main-->
         <scene sceneID="zbv-QN-Tvm">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="ng2-Ip-TDW" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="main" storyboardName="Main" id="ng2-Ip-TDW" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uKG-QR-hzY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="805" y="-16"/>
         </scene>
-        <!--View Controller-->
+        <!--Register-->
         <scene sceneID="exb-2H-5el">
             <objects>
-                <viewController id="fZb-D4-Sf0" sceneMemberID="viewController">
+                <viewController id="fZb-D4-Sf0" userLabel="Register" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="X0K-sO-8jv"/>
                         <viewControllerLayoutGuide type="bottom" id="kQr-Jo-EmC"/>
@@ -123,6 +123,12 @@
                     <view key="view" contentMode="scaleToFill" id="aER-ce-ECf">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sl-K3-tEF">
+                                <rect key="frame" x="154" y="285" width="164" height="78"/>
+                                <state key="normal" title="Done"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>

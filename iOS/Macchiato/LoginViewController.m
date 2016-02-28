@@ -15,9 +15,11 @@
 @implementation LoginViewController
 
 - (void)viewDidLoad {
-    self.isIdentityVerified = false;
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.isIdentityVerified = false;
+    self.segue = [[UIStoryboardSegue alloc] initWithIdentifier:@"segueToMain1" source:self destination:[self.storyboard instantiateViewControllerWithIdentifier:@"main"]];
+//    [self prepareForSegue:self.segue sender:self];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,20 +43,20 @@
                     NSDictionary* userInfo = [[json objectForKey:@"posts"] objectAtIndex:0];
                     if ([[userInfo objectForKey:@"username"] isEqualToString:self.username.text] && [[userInfo objectForKey:@"password"] isEqualToString:self.password.text]) {
                         printf("verified!\n");
-                        self.isIdentityVerified = true;
-                        //                        [self performSegueWithIdentifier:@"segueToMain" sender:self];
+                        [[NSOperationQueue mainQueue] addOperationWithBlock:^ {
+                            [self performSegueWithIdentifier:@"segueLoginToMain" sender:self];
+                        }];
                     }
                 }
             }] resume];
+//    if (self.isIdentityVerified) {
+//        [self performSegueWithIdentifier:@"segueLoginToMain" sender:self];
+//    }
 }
 
-- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
-    if ([identifier isEqualToString:@"segueToMain"]) {
-        if (!self.isIdentityVerified) {
-            return NO;
-        }
-    }
-    return YES;
+
+- (void)proceedToMainView {
+    
 }
 
 @end
