@@ -49,14 +49,6 @@
                     }
                 }
             }] resume];
-//    if (self.isIdentityVerified) {
-//        [self performSegueWithIdentifier:@"segueLoginToMain" sender:self];
-//    }
-}
-
-
-- (void)proceedToMainView {
-    
 }
 
 @end

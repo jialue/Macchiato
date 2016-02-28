@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MainViewController.h"
 
 @interface LoginViewController : UIViewController
 
@@ -15,7 +14,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *password;
 @property BOOL isIdentityVerified;
 @property UIStoryboardSegue* segue;
-@property MainViewController* mainViewController;
 
 - (IBAction)loginButton:(id)sender;
 
