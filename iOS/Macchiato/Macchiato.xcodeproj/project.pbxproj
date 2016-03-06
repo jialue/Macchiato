@@ -14,6 +14,8 @@
 		45BDCB231C55DB4200A2FE8A /* MacchiatoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BDCB221C55DB4200A2FE8A /* MacchiatoTests.m */; };
 		45BDCB2E1C55DB4200A2FE8A /* MacchiatoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BDCB2D1C55DB4200A2FE8A /* MacchiatoUITests.m */; };
 		45C0D6DF1C7930760074A55C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C0D6DE1C7930760074A55C /* LoginViewController.m */; };
+		45C0D6E71C8CE1C10074A55C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C0D6E61C8CE1C10074A55C /* CoreLocation.framework */; };
+		45C0D6E91C8CE29F0074A55C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C0D6E81C8CE29F0074A55C /* MainViewController.m */; };
 		45E728DF1C5D1A1C00EE5F44 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E728DE1C5D1A1C00EE5F44 /* Login.storyboard */; };
 		45E728E91C5EBB8600EE5F44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E728E81C5EBB8600EE5F44 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -53,6 +55,8 @@
 		45C0D6DE1C7930760074A55C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../LoginViewController.m; sourceTree = "<group>"; };
 		45C0D6E01C7930880074A55C /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		45C0D6E11C83740D0074A55C /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		45C0D6E61C8CE1C10074A55C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		45C0D6E81C8CE29F0074A55C /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		45E728DE1C5D1A1C00EE5F44 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		45E728E81C5EBB8600EE5F44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45C0D6E71C8CE1C10074A55C /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,7 @@
 		45BDCAFC1C55DB4200A2FE8A = {
 			isa = PBXGroup;
 			children = (
+				45C0D6E61C8CE1C10074A55C /* CoreLocation.framework */,
 				45BDCB071C55DB4200A2FE8A /* Macchiato */,
 				45BDCB211C55DB4200A2FE8A /* MacchiatoTests */,
 				45BDCB2C1C55DB4200A2FE8A /* MacchiatoUITests */,
@@ -117,6 +123,7 @@
 				45C0D6DC1C6FCD960074A55C /* URLConnection.h */,
 				45C0D6E01C7930880074A55C /* LoginViewController.h */,
 				45C0D6E11C83740D0074A55C /* MainViewController.h */,
+				45C0D6E81C8CE29F0074A55C /* MainViewController.m */,
 			);
 			path = Macchiato;
 			sourceTree = "<group>";
@@ -282,6 +289,7 @@
 				45C0D6DF1C7930760074A55C /* LoginViewController.m in Sources */,
 				45BDCB0D1C55DB4200A2FE8A /* AppDelegate.m in Sources */,
 				45BDCB0A1C55DB4200A2FE8A /* main.mm in Sources */,
+				45C0D6E91C8CE29F0074A55C /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

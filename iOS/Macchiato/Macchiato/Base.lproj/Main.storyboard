@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ucf-tA-sXb">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--Main-->
+        <!--Item1-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" userLabel="Main" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" userLabel="Item1" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -43,17 +43,34 @@
                         <constraints>
                             <constraint firstItem="vkO-Ad-ubt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Evi-71-gmM"/>
                             <constraint firstItem="dUT-vd-BbX" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="MUJ-FC-qfD"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dUT-vd-BbX" secondAttribute="bottom" id="sdO-2V-UNb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dUT-vd-BbX" secondAttribute="bottom" id="bL5-ds-Mjt"/>
                             <constraint firstItem="dUT-vd-BbX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vK9-0s-DHl"/>
                             <constraint firstItem="vkO-Ad-ubt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yYg-nj-fwT"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="UDt-hF-Nfg"/>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="272" y="274"/>
+            <point key="canvasLocation" x="920" y="26"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="GYa-E5-o7v">
+            <objects>
+                <tabBarController id="Ucf-tA-sXb" userLabel="Main" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="rP2-9V-0MB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="d1g-6z-RmZ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4YU-if-Co5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>

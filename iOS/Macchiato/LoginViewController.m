@@ -28,6 +28,9 @@
 }
 
 - (IBAction)loginButton:(id)sender {
+    // HACK
+    [self performSegueWithIdentifier:@"segueLoginToMain" sender:self];
+    
     NSURL *url = [NSURL URLWithString:@"http://localhost/~air/test.php?user=0&format=json"];
     NSURLSession *session = [NSURLSession sharedSession];
     [[session dataTaskWithURL:url
