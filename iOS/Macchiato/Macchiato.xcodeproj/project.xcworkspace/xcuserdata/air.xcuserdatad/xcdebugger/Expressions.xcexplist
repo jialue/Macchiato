@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[TaskCreationViewController viewDidLoad]:TaskCreationViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.itemViewController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[TaskCreationViewController CreateTask:]:TaskCreationViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.itemViewController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[TaskCreationViewController initWithCoder:]:TaskCreationViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

@@ -14,10 +14,10 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 //    [NSThread sleepForTimeInterval:100.0];
+    self.tasks = [NSMutableArray new];
     return YES;
 }
 

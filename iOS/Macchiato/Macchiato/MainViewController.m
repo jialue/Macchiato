@@ -35,13 +35,17 @@
     self.locationManager.desiredAccuracy = kCLLocationAccuracyKilometer;
     
     // Set a movement threshold for new events.
-    self.locationManager.distanceFilter = 500; // meters
+    self.locationManager.distanceFilter = 100; // meters
     
     [self.locationManager startUpdatingLocation];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(nonnull NSArray<CLLocation *> *)locations {
 //    NSLog(@"Location: %@\n", locations[0]);
+}
+
+- (void)locationManager:(CLLocationManager *)manager didEnterRegion:(nonnull CLRegion *)region {
+    
 }
 
 @end

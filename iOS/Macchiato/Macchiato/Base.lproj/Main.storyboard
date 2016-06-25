@@ -1,61 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ucf-tA-sXb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ucf-tA-sXb">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--Item1-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController storyboardIdentifier="main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" userLabel="Item1" customClass="MainViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="vkO-Ad-ubt">
-                                <rect key="frame" x="-20" y="-268" width="640" height="1136"/>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Main" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U9K-fR-Igg">
-                                <rect key="frame" x="252" y="285" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dUT-vd-BbX">
-                                <rect key="frame" x="0.0" y="507" width="600" height="49"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="49" id="HsN-0D-YND"/>
-                                </constraints>
-                                <items>
-                                    <tabBarItem title="Item" image="CoffeeBean_x1" selectedImage="CoffeeBean_x1" id="hPJ-Uw-bZA" userLabel="Page1"/>
-                                    <tabBarItem title="Item" image="CoffeeBean_x1" id="eLM-pD-3JR" userLabel="Page2"/>
-                                    <tabBarItem systemItem="favorites" id="QYq-ZR-NeI"/>
-                                    <tabBarItem systemItem="more" id="CgX-ad-LYl"/>
-                                </items>
-                            </tabBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="vkO-Ad-ubt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Evi-71-gmM"/>
-                            <constraint firstItem="dUT-vd-BbX" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="MUJ-FC-qfD"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dUT-vd-BbX" secondAttribute="bottom" id="bL5-ds-Mjt"/>
-                            <constraint firstItem="dUT-vd-BbX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vK9-0s-DHl"/>
-                            <constraint firstItem="vkO-Ad-ubt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yYg-nj-fwT"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="UDt-hF-Nfg"/>
-                    <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="920" y="26"/>
-        </scene>
         <!--Main-->
         <scene sceneID="GYa-E5-o7v">
             <objects>
@@ -66,15 +15,41 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="d1g-6z-RmZ"/>
+                        <segue destination="VsW-Bn-Shd" kind="relationship" relationship="viewControllers" id="b9c-Th-tC1"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4YU-if-Co5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="w2y-Sm-zps">
+            <objects>
+                <viewController id="06E-H6-mIi" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3yF-El-gxM"/>
+                        <viewControllerLayoutGuide type="bottom" id="E1s-i0-UTz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t7h-9S-8VU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nWi-8r-emG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Item-->
+        <scene sceneID="zIN-Hi-ToI">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Item.storyboard" storyboardName="Item" id="VsW-Bn-Shd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="CoffeeBean_x1" id="TVX-7q-nJ3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nBH-wV-nDb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="904" y="837"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="Background" width="640" height="1136"/>
         <image name="CoffeeBean_x1" width="30" height="30"/>
     </resources>
 </document>
